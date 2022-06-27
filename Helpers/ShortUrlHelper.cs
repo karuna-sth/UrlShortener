@@ -1,28 +1,8 @@
-/*
- * ShortURL (https://github.com/delight-im/ShortURL)
- * Copyright (c) delight.im (https://www.delight.im/)
- * Licensed under the MIT License (https://opensource.org/licenses/MIT)
- */
-
 using System.Linq;
 using System.Text;
 
 namespace UrlShortener.Helpers
 {
-    /**
-     * ShortURL: Bijective conversion between natural numbers (IDs) and short strings
-     *
-     * ShortURL.Encode() takes an ID and turns it into a short string
-     * ShortURL.Decode() takes a short string and turns it into an ID
-     *
-     * Features:
-     * + large alphabet (51 chars) and thus very short resulting strings
-     * + proof against offensive words (removed 'a', 'e', 'i', 'o' and 'u')
-     * + unambiguous (removed 'I', 'l', '1', 'O' and '0')
-     *
-     * Example output:
-     * 123456789 <=> pgK8p
-     */
     public class ShortUrlHelper
     {
 
